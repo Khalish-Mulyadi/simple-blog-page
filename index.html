@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet" />
+    <title>Blog Page</title>
+  </head>
+
+  <body>
+    <!-- header section start -->
+    <header class="bg-white bg-opacity-70 backdrop-blur-sm fixed top-0 left-0 w-full flex items-center z-10">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between relative">
+          <div class="px-5">
+            <a href="#home" class="font-bold text-2xl block py-6 text-[#937DC2]">Teyvatpedia</a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="w-[30px] h-[2px] my-2 block bg-black transition duration-300 ease-in-out origin-top-left"></span>
+              <span class="w-[30px] h-[2px] my-2 block bg-black transition duration-300 ease-in-out"></span>
+              <span class="w-[30px] h-[2px] my-2 block bg-black transition duration-300 ease-in-out origin-bottom-left"></span>
+            </button>
+
+            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="#home" class="text-base text-black py-2 mx-8 flex group-hover:text-[#645CAA]">Home</a>
+                </li>
+                <li class="group">
+                  <a href="#guide" class="text-base text-black py-2 mx-8 flex group-hover:text-[#645CAA]">Guide</a>
+                </li>
+                <li class="group">
+                  <a href="#character-build" class="text-base text-black py-2 mx-8 flex group-hover:text-[#645CAA]">Character Build</a>
+                </li>
+                <li class="group">
+                  <a href="#news" class="text-base text-black py-2 mx-8 flex group-hover:text-[#645CAA]">News</a>
+                </li>
+                <li class="group">
+                  <a href="#about" class="text-base text-black py-2 mx-8 flex group-hover:text-[#645CAA]">About</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- progress bar start -->
+    <section id="progress-bar" class="fixed top-20 z-20"></section>
+    <!-- progress bar end -->
+
+    <!-- article section start -->
+    <section id="home" class="pt-24">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-5">
+            <div>
+              <img src="dist/img/genshin-anime.webp" alt="genshin-anime" class="max-w-auto lg:max-w-[920px] mx-auto" />
+            </div>
+            <!-- title and subtitle start -->
+            <h1 class="font-bold py-3 lg:py-8 text-2xl lg:text-[55px]">Genshin Impact Is Becoming an Anime</h1>
+            <h2 class="text-xl">The new trailer showed a tease of their vision of Mondstadt along with three important characters.</h2>
+            <!-- tite and subtitle end -->
+
+            <!-- share media start-->
+            <div class="container mx-auto py-3 flex flex-wrap flex-col">
+              <span class="inline-flex sm:mt-0 mt-1">
+                <a class="text-blue-600">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-sky-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-fuchsia-600">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+            <!-- share media end -->
+
+            <!-- author start -->
+            <section class="pb-5 flex items-center">
+              <div>
+                <a href="#">
+                  <img src="dist/img/gaeul.jpg" class="w-12 h-12 object-cover rounded-full" alt="author" />
+                </a>
+              </div>
+              <span class="pl-5 font-bold">by</span>
+              <span class="pl-1 font-bold hover:text-[#937DC2]"><a href="#">Gaeul</a></span>
+              <div class="pl-16 flex">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z"
+                  />
+                </svg>
+                <span class="pl-3">Posted on Oct. 7, 2022, 10.00 am</span>
+              </div>
+            </section>
+            <!-- author end -->
+
+            <div class="container px-5 mx-auto">
+              <div class="flex flex-wrap -m-4 article">
+                <!-- table of content start -->
+                <div class="sticky py-3 h-full lg:w-2/12 top-20">
+                  <button id="table_of_content_button" type="button" class="block bg-white shadow-xl rounded-xl px-3 py-3 lg:hidden">
+                    <span
+                      ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <div id="table_of_content" class="hidden py-5 px-5 mt-2 lg:mt-0 bg-white shadow-xl rounded-lg w-auto lg:block lg:px-3">
+                    <nav>
+                      <h3>TABLE OF CONTENTS</h3>
+                      <ul class="block">
+                        <li class="group">
+                          <a href="#section-1" class="text-base py-5 group-hover:text-[#937DC2]">Section 1</a>
+                        </li>
+                        <li class="group">
+                          <a href="#section-2" class="text-base py-5 group-hover:text-[#937DC2]">Section 2</a>
+                        </li>
+                        <li class="group">
+                          <a href="#section-3" class="text-base py-5 group-hover:text-[#937DC2]">Section 3</a>
+                        </li>
+                        <li class="group">
+                          <a href="#section-4" class="text-base py-5 group-hover:text-[#937DC2]">Section 4</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div></div>
+                </div>
+                <!-- table of content end -->
+
+                <!-- article content start -->
+                <div class="p-3 lg:w-8/12">
+                  <span class="block invisible h-24 -mt-24" id="section-1"></span>
+                  <p>Genshin Impact is officially becoming an anime as developer HoYoverse has announced a new collaboration with animation studio Ufotable.</p>
+                  <br />
+                  <p>
+                    Announced during the game's Version 3.1 Special Programme, a three-minute concept trailer (that was later shared on the official Genshin Impact Twitter, below) showed off the art style and feel of what the anime will
+                    eventually be.
+                  </p>
+                  <br />
+                  <p>Given that this is just a concept trailer, it will likely be some time before the final episodes are released, and HoYoverse have branded this as a "long-term project".</p>
+                  <br />
+                  <span class="block invisible h-24 -mt-24" id="section-2"></span>
+                  <p>
+                    The video does give us a brief teaser, however. "Let's step into this vast magical world of adventure together," its description reads. "The long-term collaboration project between Genshin Impact and ufotable has begun."
+                  </p>
+                  <br />
+                  <span class="block invisible h-24 -mt-24" id="section-3"></span>
+                  <p>
+                    For those unfamilar, Genshin Impact is one of the biggest games that released in 2020. Inspired by anime from the start, the action RPG has players travel throughout an open world in search of the Archons of the seven
+                    elements.
+                  </p>
+                  <br />
+                  <p>
+                    It's also seen a ton of updates since it first launched, adding new characters, quests, items, and more, and has even seen crossovers with other franchises including Horizon: Zero Dawn. As with every new version stream,
+                    three new codes for Genshin Impact's premium currency and other rewards were released too.
+                  </p>
+                  <br />
+                  <span class="block invisible h-24 -mt-24" id="section-4"></span>
+                  <p>In our 9/10 review, IGN said: "An incredible open-world and addictive exploration make Genshin Impact anime-zing adventure."</p>
+                </div>
+                <!-- article content end -->
+
+                <!-- empty rail start -->
+                <div class="p-3 lg:w-2/12"></div>
+                <!-- empty rail end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- article section end -->
+
+    <!-- other articles section start -->
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <h2 class="font-bold text-center text-4xl pb-5 text-[#937DC2]">More Like This</h2>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 md:w-1/3">
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="dist/img/cyno.jpg" alt="blog" />
+              <div class="p-6">
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CHARACTER BUILD</h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Cyno Character Best Build</h1>
+                <p class="leading-relaxed mb-3">Cyno, the new electro DPS character from Sumeru best build.</p>
+                <div class="flex items-center flex-wrap">
+                  <a class="text-[#937DC2] inline-flex items-center md:mb-2 lg:mb-0"
+                    >Learn More
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle></svg
+                    >1.2K
+                  </span>
+                  <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path></svg
+                    >6
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3">
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="dist/img/dendroculus.png" alt="blog" />
+              <div class="p-6">
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">GUIDE</h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Genshin Impact Dendroculus Locations</h1>
+                <p class="leading-relaxed mb-3">All Dendroculus locations up until 3.1 version.</p>
+                <div class="flex items-center flex-wrap">
+                  <a class="text-[#937DC2] inline-flex items-center md:mb-2 lg:mb-0"
+                    >Learn More
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle></svg
+                    >1.2K
+                  </span>
+                  <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path></svg
+                    >6
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3">
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="dist/img/Dominos-Pizza-Singapore-x-Genshin-Impact-Collaboration.jpg" alt="blog" />
+              <div class="p-6">
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">NEWS</h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Genshin Impact Collabs With Domino’s Pizza To Bring Gamers Emergency Food</h1>
+                <p class="leading-relaxed mb-3">Don't wait! Grab 'em before it's too late!</p>
+                <div class="flex items-center flex-wrap">
+                  <a class="text-[#937DC2] inline-flex items-center md:mb-2 lg:mb-0"
+                    >Learn More
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle></svg
+                    >1.2K
+                  </span>
+                  <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path></svg
+                    >6
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- other articles section end -->
+
+    <!-- footer section start -->
+    <footer class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <span class="font-bold text-2xl block py-6 text-[#937DC2]">Teyvatpedia</span>
+          </a>
+          <p class="mt-2 text-sm text-gray-500">Let's begin our journey together Traveler</p>
+        </div>
+        <div class="flex-grow flex md:justify-end flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">GUIDE</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Genshin Interactive Map</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Puzzles</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Region Exploration</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CHARACTER BUILD</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Character Lore</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Character Build</a>
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#937DC2]">
+        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+          <p class="text-slate-100 text-sm text-center sm:text-left">
+            © 2022 Teyvatpedia—
+            <a href="#" rel="noopener noreferrer" class="text-slate-100 ml-1" target="_blank">@khalishm_</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+            <a class="text-slate-100">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-slate-100">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-slate-100">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-slate-100">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48">
+                <path
+                  d="M40,12c0,0-4.585-3.588-10-4l-0.488,0.976C34.408,10.174,36.654,11.891,39,14c-4.045-2.065-8.039-4-15-4s-10.955,1.935-15,4c2.346-2.109,5.018-4.015,9.488-5.024L18,8c-5.681,0.537-10,4-10,4s-5.121,7.425-6,22c5.162,5.953,13,6,13,6l1.639-2.185C13.857,36.848,10.715,35.121,8,32c3.238,2.45,8.125,5,16,5s12.762-2.55,16-5c-2.715,3.121-5.857,4.848-8.639,5.815L33,40c0,0,7.838-0.047,13-6C45.121,19.425,40,12,40,12z M17.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C21,28.209,19.433,30,17.5,30z M30.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C34,28.209,32.433,30,30.5,30z"
+                ></path>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
