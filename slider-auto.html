@@ -1,0 +1,159 @@
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+      
+        button {
+          cursor: pointer;
+          padding: 8px 16px;
+        }
+      
+        main {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 100vw;
+          height: 100vh;
+        }
+      
+        .controls {
+          padding: 10px;
+        }
+      
+        .slides-container {
+          position: relative;
+          overflow: hidden;
+          display: flex;
+          flex: 1;
+        }
+      
+        .slide {
+          position: absolute;
+          font-size: 90px;
+          font-weight: 700;
+          color: rgba(255, 255, 255, 0.9);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      
+        .slide img {
+          width: 190px;
+          height: 190px;
+          object-fit: cover;
+        }
+      
+        .slides-inner {
+          position: relative;
+          height: 100%;
+          width: 60%;
+          overflow: hidden;
+          margin: 0 auto;
+        }
+      </style>
+
+    <main>
+        <div class="slides-container">
+          <div class="slides-inner">
+            <div class="slide">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0611/0219/4885/articles/Best_Modern_Lounge_Chairs_360x.webp?v=1666688603"
+              />
+            </div>
+      
+            <div class="slide">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0611/0219/4885/articles/Best_Modern_Lounge_Chairs_360x.webp?v=1666688603"
+              />
+            </div>
+      
+            <div class="slide">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0611/0219/4885/articles/Belfast-Black_1_360x.webp?v=1666611575"
+              />
+            </div>
+      
+            <div class="slide">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0611/0219/4885/articles/Best_Modern_Lounge_Chairs_360x.webp?v=1666688603"
+              />
+            </div>
+      
+            <div class="slide">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0611/0219/4885/articles/Belfast-Black_1_360x.webp?v=1666611575"
+              />
+            </div>
+      
+            <div class="slide">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0611/0219/4885/articles/Best_Modern_Lounge_Chairs_360x.webp?v=1666688603"
+              />
+            </div>
+      
+            <div class="slide">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0611/0219/4885/articles/Best_Modern_Lounge_Chairs_360x.webp?v=1666688603"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/ModifiersPlugin.min.js"></script>
+      <script>
+        var slideDelay = 1.5;
+        var slideDuration = 0.3;
+      
+        var slides = document.querySelectorAll(".slide");
+      
+        for (var i = 0; i < slides.length; i++) {
+          TweenLite.set(slides[i], {
+            backgroundColor: Math.random() * 0xffffff,
+            xPercent: i * 100,
+          });
+        }
+      
+        var wrap = wrapPartial(-100, (slides.length - 1) * 100);
+        var timer = TweenLite.delayedCall(slideDelay, autoPlay);
+        var animation = null;
+      
+        function animateSlides(delta) {
+          animation = TweenMax.to(slides, slideDuration, {
+            xPercent: function (i, target) {
+              return Math.round(target._gsTransform.xPercent / 100) * 100 + delta;
+            },
+            modifiers: {
+              xPercent: wrap,
+            },
+            onComplete: restartTimer,
+          });
+        }
+      
+        function autoPlay() {
+          if (!animation) {
+            animateSlides(-100);
+          }
+        }
+      
+        function restartTimer() {
+          if (animation === this) {
+            animation = null;
+            timer.restart(true);
+          }
+        }
+      
+        function wrapPartial(min, max) {
+          var r = max - min;
+          return function (value) {
+            var v = value - min;
+            return ((r + (v % r)) % r) + min;
+          };
+        }
+      </script>
+
+
+
